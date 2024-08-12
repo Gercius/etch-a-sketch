@@ -1,0 +1,17 @@
+:root {
+    color-scheme: dark light;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    display: flex;
+}
+
+.square {
+    background: goldenrod;
+    border: white 1px solid;
+}
