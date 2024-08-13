@@ -1,5 +1,5 @@
 let gridSize = 69;
-let containerSize = 780 - gridSize;
+let containerSize = 420;
 let squareSize = (parseInt(containerSize) / gridSize).toString();
 
 const body = document.querySelector("body");
@@ -45,12 +45,12 @@ function updateGridParams(e) {
     const newSize = e.target.value;
     gridSize = newSize;
 
-    containerSize = 800 - gridSize;
+    containerSize = 420;
     squareSize = (parseInt(containerSize) / gridSize).toString();
 }
 
 function repaintGrid() {
-    if (gridSize > 100 || gridSize < 2 || isNaN(gridSize)) return;
+    if (gridSize > 69 || gridSize < 2 || isNaN(gridSize)) return;
 
     container.innerHTML = "";
     createGrid();
